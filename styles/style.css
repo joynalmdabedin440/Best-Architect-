@@ -139,3 +139,41 @@
 .feature-content {
     padding: 0 2em;
 }
+
+.fact{
+     margin-top: 5em;
+     margin-bottom: 5em;
+}
+
+.fact-icon{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+.fact-card{
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 1.5em;
+    text-align: center;
+    
+
+}
+
+.sponsors{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.sponsors-text{
+    margin: 30px 200px;
+
+}
+
+.sponsors-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

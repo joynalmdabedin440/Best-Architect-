@@ -1,53 +1,60 @@
-
-*{
+* {
     margin: 0;
-   
+
 }
 
-.header{
-    background-color: #f1cfa8 ;
+.header {
+    background-color: #f1cfa8;
     padding: 50px 240px;
+    margin-bottom: 40px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 
 }
- .navbar>h1{
+
+.navbar>h1 {
     font-size: 2.8rem;
- }
-.navbar>ul{
+}
+
+.navbar>ul {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-.navbar>ul>li{
+
+.navbar>ul>li {
     padding: 5px;
     list-style-type: none;
     font-size: 1.2em;
 }
 
-.banner{
+.banner {
     text-align: center;
     padding-top: 50px;
 }
-.banner-content{
+
+.banner-content {
     max-width: 850px;
     margin: auto;
 }
-.banner-content>h1{
+
+.banner-content>h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.banner-content>p{
+
+.banner-content>p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: orange;
     text-align: center;
     padding: 20px;
@@ -58,6 +65,77 @@
     margin-bottom: 20px;
 }
 
-.banner>img{
+@media screen and (max-width:576px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 10px 20px;
+    }
+
+    .navbar>h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content>h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .feature-img{
+        display: flex;
+        flex-direction: column;
+        
+       
+       
+    }
+    .quick-feature {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:1080px) {
+
+    /* .navbar{
+        flex-direction: column;
+    } */
+    .header {
+        padding: 10px 20px;
+    }
+
+    .navbar>h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content>h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.banner>img {
     width: 100%;
+    height: 100%;
+}
+
+.quick-feature {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+}
+
+.feature-content {
+    padding: 0 2em;
 }

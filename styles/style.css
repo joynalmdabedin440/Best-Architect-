@@ -1,0 +1,26 @@
+
+*{
+    margin: 0;
+   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1cfa8 ;
+    padding: 50px 240px;
+
+}
+ .navbar>h1{
+    font-size: 2.8rem;
+ }
+.navbar>ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.navbar>ul>li{
+    padding: 5px;
+    list-style-type: none;
+    font-size: 1.2em;
+}
